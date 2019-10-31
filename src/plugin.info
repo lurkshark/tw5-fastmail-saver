@@ -1,0 +1,9 @@
+{
+    "title": "$:/plugins/lurkshark/fastmail-saver",
+    "description": "Saver module for Fastmail web hosting",
+    "author": "joel",
+    "version": "0.1.0",
+    "core-version": ">=5.0.8",
+    "source": "https://github.com/lurkshark/tw5-fastmail-saver",
+    "plugin-type": "plugin"
+}
