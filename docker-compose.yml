@@ -1,0 +1,18 @@
+version: "3"
+services:
+  wiki:
+    build:
+      context: .
+      args:
+        PLUGIN_NAME: $PLUGIN_NAME
+        EDITION: $EDITION
+    volumes:
+    - ./src:/usr/src/tw5/plugins/${PLUGIN_NAME}
+    - ./output:/usr/src/tw5/editions/${EDITION}/output
+    entrypoint:
+    - node
+    - ./tiddlywiki.js
+    - ./editions/${EDITION}
+    - --build
+    - index
+ 
