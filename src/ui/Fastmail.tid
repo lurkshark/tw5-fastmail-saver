@@ -1,0 +1,7 @@
+title: $:/plugins/lurkshark/fastmail-saver/ui/Fastmail
+tags: $:/tags/ControlPanel/Saving
+caption: Fastmail Saver
+
+See the [[Fastmail Saver|$:/plugins/lurkshark/fastmail-saver]] readme for setup instructions
+
+<$checkbox tiddler="$:/plugins/lurkshark/fastmail-saver/config/Enabled" field="text" checked="yes" unchecked="no" default="yes"> Enable saving to a Fastmail website </$checkbox>

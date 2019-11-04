@@ -4,15 +4,16 @@ services:
     build:
       context: .
       args:
-        PLUGIN_NAME: $PLUGIN_NAME
-        EDITION: $EDITION
+        TW_PLUGIN_NAME: $TW_PLUGIN_NAME
+        TW_BUILD_EDITION: $TW_BUILD_EDITION
+        TW_VERSION: $TW_VERSION
     volumes:
-    - ./src:/usr/src/tw5/plugins/${PLUGIN_NAME}
-    - ./output:/usr/src/tw5/editions/${EDITION}/output
+    - ./src:/usr/src/tw5/plugins/${TW_PLUGIN_NAME}
+    - ./output:/usr/src/tw5/editions/${TW_BUILD_EDITION}/output
     entrypoint:
     - node
     - ./tiddlywiki.js
-    - ./editions/${EDITION}
+    - ./editions/${TW_BUILD_EDITION}
     - --build
     - index
  
